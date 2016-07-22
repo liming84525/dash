@@ -1,0 +1,33 @@
+<taglib>
+    <tlib-version>2.1</tlib-version>
+    <jsp-version>2.1</jsp-version>
+    <short-name>Example TLD</short-name>
+    <uri>WEB-INF/tag.tld</uri>
+    <tag>
+        <name>Hello</name>
+        <tag-class>tag.FirstTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>list</name>
+        <tag-class>tag.SecondTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>collection</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>obj</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    <tag>
+        <name>fragment</name>
+        <tag-class>tag.FragmentTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>fragment</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
